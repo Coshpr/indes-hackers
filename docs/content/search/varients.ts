@@ -5,7 +5,8 @@ type KeyItem = {
     title: string,
     url?: string,
     description?: string
-    sources?: Record<string, string | number | null>[]
+    sources?: Record<string, string | number | null>[],
+    icon?:string
 }
 
 // top level
@@ -37,8 +38,8 @@ export const topics: Record<string, string[]> = {
 
 
 export const key_items: Record<string, KeyItem> = {
-    'life': { title: "生活" },
-    'dev': { title: "开发" },
+    'life': { title: "LifeKits" },
+    'dev': { title: "WebDev" },
 
     'reading': { title: "阅读" },
     'movie': { title: "电影" },
@@ -48,10 +49,12 @@ export const key_items: Record<string, KeyItem> = {
 
     'wx-reading': {
         title: "微信阅读",
-        url: ""
+        url: "https://weread.qq.com/",
+        description: '微信读书-正版书籍小说免费阅读',
+        icon:"https://rescdn.qqmail.com/node/wr/wrpage/style/images/independent/appleTouchIcon/apple-touch-icon-120x120.png",
     },
-    'bilibili': { title: "Bilibili", url: "bilibil.com" },
-    'bdys': { title: "哔嘀影视", url: "bdys10.com" },
+    'bilibili': { title: "Bilibili", url: "https://www.bilibili.com/", description: "bilibili是国内知名的视频弹幕网站，这里有及时的动漫新番，活跃的ACG氛围，有创意的Up主。大家可以在这里找到许多欢乐。" },
+    'bdys': { title: "哔嘀影视", url: "https://www.yjys.me/" },
     'astro': { title: "astro", url: "#" },
     'vue': { title: "vue", url: "#" },
     'react': { title: "react", url: "#" },

@@ -75,8 +75,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-
-.global_screen_setting {
-  @apply max-w-7xl w-full mx-auto px-4;
-}
